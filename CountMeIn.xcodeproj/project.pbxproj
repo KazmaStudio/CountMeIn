@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060CCD711C9A7B5100F51B7F /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060CCD6E1C9A7B3100F51B7F /* Kingfisher.framework */; };
+		060CCD721C9A7B5100F51B7F /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 060CCD6E1C9A7B3100F51B7F /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		060CCD741C9A7B5400F51B7F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060CCD6D1C9A7B3100F51B7F /* Alamofire.framework */; };
+		060CCD751C9A7B5400F51B7F /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 060CCD6D1C9A7B3100F51B7F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0613A3CD1C9A5AE5008FD601 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0613A3CC1C9A5AE5008FD601 /* AppDelegate.swift */; };
 		0613A3D21C9A5AE6008FD601 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0613A3D01C9A5AE6008FD601 /* Main.storyboard */; };
 		0613A3D41C9A5AE6008FD601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0613A3D31C9A5AE6008FD601 /* Assets.xcassets */; };
@@ -42,7 +46,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		060CCD731C9A7B5100F51B7F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				060CCD721C9A7B5100F51B7F /* Kingfisher.framework in Embed Frameworks */,
+				060CCD751C9A7B5400F51B7F /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		060CCD6D1C9A7B3100F51B7F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		060CCD6E1C9A7B3100F51B7F /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = "<group>"; };
 		0613A3C91C9A5AE5008FD601 /* CountMeIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountMeIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0613A3CC1C9A5AE5008FD601 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0613A3D11C9A5AE6008FD601 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				060CCD711C9A7B5100F51B7F /* Kingfisher.framework in Frameworks */,
+				060CCD741C9A7B5400F51B7F /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +182,8 @@
 		0613A3FB1C9A5E8B008FD601 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				060CCD6D1C9A7B3100F51B7F /* Alamofire.framework */,
+				060CCD6E1C9A7B3100F51B7F /* Kingfisher.framework */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -234,6 +259,7 @@
 				0613A3C51C9A5AE5008FD601 /* Sources */,
 				0613A3C61C9A5AE5008FD601 /* Frameworks */,
 				0613A3C71C9A5AE5008FD601 /* Resources */,
+				060CCD731C9A7B5100F51B7F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
