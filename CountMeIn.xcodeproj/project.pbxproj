@@ -23,10 +23,6 @@
 		0613A4181C9A78F8008FD601 /* UITableView+NodataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0613A40E1C9A78F8008FD601 /* UITableView+NodataView.swift */; };
 		0613A4191C9A78F8008FD601 /* UIView+XIBEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0613A40F1C9A78F8008FD601 /* UIView+XIBEdit.swift */; };
 		0613A41A1C9A78F8008FD601 /* ViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0613A4101C9A78F8008FD601 /* ViewCell.swift */; };
-		0613A4241C9A7990008FD601 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0613A4221C9A7989008FD601 /* Kingfisher.framework */; };
-		0613A4251C9A7990008FD601 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0613A4221C9A7989008FD601 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0613A4271C9A7993008FD601 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0613A4201C9A797E008FD601 /* Alamofire.framework */; };
-		0613A4281C9A7993008FD601 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0613A4201C9A797E008FD601 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,21 +41,6 @@
 			remoteInfo = CountMeIn;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		0613A4261C9A7990008FD601 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0613A4251C9A7990008FD601 /* Kingfisher.framework in Embed Frameworks */,
-				0613A4281C9A7993008FD601 /* Alamofire.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0613A3C91C9A5AE5008FD601 /* CountMeIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountMeIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,8 +65,6 @@
 		0613A40E1C9A78F8008FD601 /* UITableView+NodataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+NodataView.swift"; sourceTree = "<group>"; };
 		0613A40F1C9A78F8008FD601 /* UIView+XIBEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XIBEdit.swift"; sourceTree = "<group>"; };
 		0613A4101C9A78F8008FD601 /* ViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCell.swift; sourceTree = "<group>"; };
-		0613A4201C9A797E008FD601 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
-		0613A4221C9A7989008FD601 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0613A4241C9A7990008FD601 /* Kingfisher.framework in Frameworks */,
-				0613A4271C9A7993008FD601 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,8 +159,6 @@
 		0613A3FB1C9A5E8B008FD601 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				0613A4221C9A7989008FD601 /* Kingfisher.framework */,
-				0613A4201C9A797E008FD601 /* Alamofire.framework */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -259,7 +234,6 @@
 				0613A3C51C9A5AE5008FD601 /* Sources */,
 				0613A3C61C9A5AE5008FD601 /* Frameworks */,
 				0613A3C71C9A5AE5008FD601 /* Resources */,
-				0613A4261C9A7990008FD601 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
