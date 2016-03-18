@@ -31,6 +31,11 @@
 		0687C7131C9A8BF5004A5785 /* NavigationControllerActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0687C7121C9A8BF5004A5785 /* NavigationControllerActivity.swift */; };
 		0687C7151C9A8C0E004A5785 /* TableViewControllerActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0687C7141C9A8C0E004A5785 /* TableViewControllerActivity.swift */; };
 		0687C7181C9A8CB0004A5785 /* TabbarControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0687C7171C9A8CB0004A5785 /* TabbarControllerMain.swift */; };
+		0687C7201C9BEF76004A5785 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0687C71C1C9BEF76004A5785 /* libWeChatSDK.a */; };
+		0687C7251C9BF607004A5785 /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0687C7211C9BF607004A5785 /* ViewControllerLogin.swift */; };
+		0687C7261C9BF607004A5785 /* ViewControllerRegisterMobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0687C7221C9BF607004A5785 /* ViewControllerRegisterMobile.swift */; };
+		0687C7271C9BF607004A5785 /* SBLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0687C7231C9BF607004A5785 /* SBLogin.storyboard */; };
+		0687C7281C9BF607004A5785 /* SBRegisterMobile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0687C7241C9BF607004A5785 /* SBRegisterMobile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +99,14 @@
 		0687C7121C9A8BF5004A5785 /* NavigationControllerActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerActivity.swift; sourceTree = "<group>"; };
 		0687C7141C9A8C0E004A5785 /* TableViewControllerActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerActivity.swift; sourceTree = "<group>"; };
 		0687C7171C9A8CB0004A5785 /* TabbarControllerMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarControllerMain.swift; sourceTree = "<group>"; };
+		0687C71C1C9BEF76004A5785 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		0687C71D1C9BEF76004A5785 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		0687C71E1C9BEF76004A5785 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		0687C71F1C9BEF76004A5785 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		0687C7211C9BF607004A5785 /* ViewControllerLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerLogin.swift; sourceTree = "<group>"; };
+		0687C7221C9BF607004A5785 /* ViewControllerRegisterMobile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerRegisterMobile.swift; sourceTree = "<group>"; };
+		0687C7231C9BF607004A5785 /* SBLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SBLogin.storyboard; sourceTree = "<group>"; };
+		0687C7241C9BF607004A5785 /* SBRegisterMobile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SBRegisterMobile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +116,7 @@
 			files = (
 				060CCD711C9A7B5100F51B7F /* Kingfisher.framework in Frameworks */,
 				060CCD741C9A7B5400F51B7F /* Alamofire.framework in Frameworks */,
+				0687C7201C9BEF76004A5785 /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +204,7 @@
 		0613A3FB1C9A5E8B008FD601 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				0687C71B1C9BEF76004A5785 /* WeChat */,
 				060CCD6D1C9A7B3100F51B7F /* Alamofire.framework */,
 				060CCD6E1C9A7B3100F51B7F /* Kingfisher.framework */,
 			);
@@ -305,8 +320,23 @@
 		0687C7191C9B9812004A5785 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				0687C7211C9BF607004A5785 /* ViewControllerLogin.swift */,
+				0687C7221C9BF607004A5785 /* ViewControllerRegisterMobile.swift */,
+				0687C7231C9BF607004A5785 /* SBLogin.storyboard */,
+				0687C7241C9BF607004A5785 /* SBRegisterMobile.storyboard */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		0687C71B1C9BEF76004A5785 /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				0687C71C1C9BEF76004A5785 /* libWeChatSDK.a */,
+				0687C71D1C9BEF76004A5785 /* WechatAuthSDK.h */,
+				0687C71E1C9BEF76004A5785 /* WXApi.h */,
+				0687C71F1C9BEF76004A5785 /* WXApiObject.h */,
+			);
+			path = WeChat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,6 +448,8 @@
 				0613A3D71C9A5AE6008FD601 /* LaunchScreen.storyboard in Resources */,
 				0613A3D41C9A5AE6008FD601 /* Assets.xcassets in Resources */,
 				0613A3D21C9A5AE6008FD601 /* Main.storyboard in Resources */,
+				0687C7271C9BF607004A5785 /* SBLogin.storyboard in Resources */,
+				0687C7281C9BF607004A5785 /* SBRegisterMobile.storyboard in Resources */,
 				0687C70D1C9A8AF0004A5785 /* SBTableActivity.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +480,7 @@
 				0613A4171C9A78F8008FD601 /* UICommon.swift in Sources */,
 				0613A41A1C9A78F8008FD601 /* ViewCell.swift in Sources */,
 				0613A4111C9A78F8008FD601 /* Common.swift in Sources */,
+				0687C7251C9BF607004A5785 /* ViewControllerLogin.swift in Sources */,
 				0613A4151C9A78F8008FD601 /* NSString+Expand.swift in Sources */,
 				0687C7151C9A8C0E004A5785 /* TableViewControllerActivity.swift in Sources */,
 				0613A4121C9A78F8008FD601 /* CALayer+Addition.swift in Sources */,
@@ -455,6 +488,7 @@
 				0613A4141C9A78F8008FD601 /* GhostButton.swift in Sources */,
 				0613A4131C9A78F8008FD601 /* CFButton.swift in Sources */,
 				0613A4181C9A78F8008FD601 /* UITableView+NodataView.swift in Sources */,
+				0687C7261C9BF607004A5785 /* ViewControllerRegisterMobile.swift in Sources */,
 				0613A3CD1C9A5AE5008FD601 /* AppDelegate.swift in Sources */,
 				0613A4161C9A78F8008FD601 /* UIButton+Custom.swift in Sources */,
 			);
@@ -609,6 +643,10 @@
 				);
 				INFOPLIST_FILE = CountMeIn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CountMeIn/Lib/WeChat",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ftzex.CountMeIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7ef6e93b-d384-48bd-b93e-f8274239e6bb";
@@ -626,6 +664,10 @@
 				);
 				INFOPLIST_FILE = CountMeIn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CountMeIn/Lib/WeChat",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ftzex.CountMeIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f8486281-6845-4ecb-a74f-f0c8be50b5b9";
