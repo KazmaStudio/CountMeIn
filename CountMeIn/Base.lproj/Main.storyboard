@@ -1,26 +1,85 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IxQ-5r-eT5">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tabbar Controller Main-->
+        <scene sceneID="YBa-kR-YZs">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CountMeIn" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tabBarController id="IxQ-5r-eT5" customClass="TabbarControllerMain" customModule="CountMeIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Kpg-ba-oQe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="TSt-gZ-yA9" kind="relationship" relationship="viewControllers" id="HUP-tz-TzU"/>
+                        <segue destination="NFh-Id-FVw" kind="relationship" relationship="viewControllers" id="6zL-9t-O9L"/>
+                        <segue destination="IpO-Fr-Z2w" kind="relationship" relationship="viewControllers" id="7MC-fk-zSR"/>
+                        <segue destination="Y8A-CS-9AZ" kind="relationship" relationship="viewControllers" id="4PW-YW-2nD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qVq-Xe-wr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-561" y="335"/>
+        </scene>
+        <!--活动-->
+        <scene sceneID="VDU-8v-6d6">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U4E-Tb-1Dd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="TSt-gZ-yA9" customClass="NavigationControllerActivity" customModule="CountMeIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="活动" id="A52-VH-FKL"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Exy-9G-3US">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="311" y="-838"/>
+        </scene>
+        <!--群组-->
+        <scene sceneID="VK0-Gu-FIX">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lMj-NJ-So1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="NFh-Id-FVw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="群组" id="Fb9-Ji-2S1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Frl-01-i59">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="311" y="-66"/>
+        </scene>
+        <!--发现-->
+        <scene sceneID="guB-TQ-7af">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UdS-wn-aBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="IpO-Fr-Z2w" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="发现" id="ajt-ng-yiy"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7qs-jK-3ko">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="311" y="738"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="xtA-A2-RWy">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sea-Qq-rp0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="Y8A-CS-9AZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" id="J9p-xM-t9m"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="S0P-dy-dnM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="311" y="1594"/>
         </scene>
     </scenes>
 </document>

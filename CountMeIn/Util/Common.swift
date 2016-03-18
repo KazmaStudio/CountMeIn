@@ -25,9 +25,11 @@ func createRESTfulURL (method: String) -> String{
 
 let userDefaults = NSUserDefaults.standardUserDefaults()
 
+let KEY_SESSION_ID = "sessionId"
+
 // we chat key
 let KEY_WECHATINFO = "weChatInfo"
-let KEY_OPENID = "openid"
+let KEY_UNIONID = "unionid"
 let KEY_NICKNAME = "nickname"
 let KEY_AVATAR = "headimgurl"
 
