@@ -96,7 +96,7 @@ class ViewControllerLogin: UIViewController, WXApiDelegate{
             
             if let JSON = response.result.value {
                 
-                let weChatInfo = [KEY_NICKNAME: JSON.objectForKey(KEY_NICKNAME) as! String, KEY_OPENID: JSON.objectForKey(KEY_OPENID) as! String, KEY_AVATAR: JSON.objectForKey(KEY_AVATAR) as! String]
+                let weChatInfo = [KEY_NICKNAME: JSON.objectForKey(KEY_NICKNAME) as! String, KEY_UNIONID: JSON.objectForKey(KEY_UNIONID) as! String, KEY_AVATAR: JSON.objectForKey(KEY_AVATAR) as! String]
                 
                 userDefaults.setObject(weChatInfo, forKey: KEY_WECHATINFO)
                 
