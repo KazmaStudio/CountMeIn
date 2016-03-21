@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		060CCD711C9A7B5100F51B7F /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060CCD6E1C9A7B3100F51B7F /* Kingfisher.framework */; };
-		060CCD721C9A7B5100F51B7F /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 060CCD6E1C9A7B3100F51B7F /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		060CCD741C9A7B5400F51B7F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060CCD6D1C9A7B3100F51B7F /* Alamofire.framework */; };
-		060CCD751C9A7B5400F51B7F /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 060CCD6D1C9A7B3100F51B7F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0613A3CD1C9A5AE5008FD601 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0613A3CC1C9A5AE5008FD601 /* AppDelegate.swift */; };
 		0613A3D21C9A5AE6008FD601 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0613A3D01C9A5AE6008FD601 /* Main.storyboard */; };
 		0613A3D41C9A5AE6008FD601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0613A3D31C9A5AE6008FD601 /* Assets.xcassets */; };
@@ -41,6 +37,10 @@
 		0687C7331C9F9014004A5785 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0687C7321C9F9014004A5785 /* libc++.tbd */; };
 		0687C7351C9F9034004A5785 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0687C7341C9F9034004A5785 /* libz.tbd */; };
 		0687C7371C9F9042004A5785 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0687C7361C9F9042004A5785 /* libsqlite3.0.tbd */; };
+		864197C11C9FD286006E0B37 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864197BE1C9FD286006E0B37 /* Alamofire.framework */; };
+		864197C21C9FD286006E0B37 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864197C01C9FD286006E0B37 /* Kingfisher.framework */; };
+		864197C31C9FD305006E0B37 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 864197BE1C9FD286006E0B37 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		864197C41C9FD305006E0B37 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 864197C01C9FD286006E0B37 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +67,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				060CCD721C9A7B5100F51B7F /* Kingfisher.framework in Embed Frameworks */,
-				060CCD751C9A7B5400F51B7F /* Alamofire.framework in Embed Frameworks */,
+				864197C31C9FD305006E0B37 /* Alamofire.framework in Embed Frameworks */,
+				864197C41C9FD305006E0B37 /* Kingfisher.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,8 +76,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		060CCD6D1C9A7B3100F51B7F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
-		060CCD6E1C9A7B3100F51B7F /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = "<group>"; };
 		0613A3C91C9A5AE5008FD601 /* CountMeIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountMeIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0613A3CC1C9A5AE5008FD601 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0613A3D11C9A5AE6008FD601 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,6 +116,8 @@
 		0687C7341C9F9034004A5785 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		0687C7361C9F9042004A5785 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		0687C7381C9F9069004A5785 /* CountMeIn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CountMeIn-Bridging-Header.h"; sourceTree = "<group>"; };
+		864197BE1C9FD286006E0B37 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		864197C01C9FD286006E0B37 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,11 +127,11 @@
 			files = (
 				0687C7371C9F9042004A5785 /* libsqlite3.0.tbd in Frameworks */,
 				0687C7351C9F9034004A5785 /* libz.tbd in Frameworks */,
+				864197C21C9FD286006E0B37 /* Kingfisher.framework in Frameworks */,
 				0687C7331C9F9014004A5785 /* libc++.tbd in Frameworks */,
 				0687C7311C9F900A004A5785 /* CoreTelephony.framework in Frameworks */,
+				864197C11C9FD286006E0B37 /* Alamofire.framework in Frameworks */,
 				0687C72F1C9F9003004A5785 /* SystemConfiguration.framework in Frameworks */,
-				060CCD711C9A7B5100F51B7F /* Kingfisher.framework in Frameworks */,
-				060CCD741C9A7B5400F51B7F /* Alamofire.framework in Frameworks */,
 				0687C72D1C9F8FBC004A5785 /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,14 +221,14 @@
 		0613A3FB1C9A5E8B008FD601 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				864197BD1C9FD286006E0B37 /* Alamofire */,
+				864197BF1C9FD286006E0B37 /* Kingfisher */,
 				0687C7361C9F9042004A5785 /* libsqlite3.0.tbd */,
 				0687C7341C9F9034004A5785 /* libz.tbd */,
 				0687C7321C9F9014004A5785 /* libc++.tbd */,
 				0687C7301C9F900A004A5785 /* CoreTelephony.framework */,
 				0687C72E1C9F9003004A5785 /* SystemConfiguration.framework */,
 				0687C71B1C9BEF76004A5785 /* WeChat */,
-				060CCD6D1C9A7B3100F51B7F /* Alamofire.framework */,
-				060CCD6E1C9A7B3100F51B7F /* Kingfisher.framework */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -359,6 +359,22 @@
 				0687C72C1C9F8FBC004A5785 /* WXApiObject.h */,
 			);
 			path = WeChat;
+			sourceTree = "<group>";
+		};
+		864197BD1C9FD286006E0B37 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				864197BE1C9FD286006E0B37 /* Alamofire.framework */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		864197BF1C9FD286006E0B37 /* Kingfisher */ = {
+			isa = PBXGroup;
+			children = (
+				864197C01C9FD286006E0B37 /* Kingfisher.framework */,
+			);
+			path = Kingfisher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -663,6 +679,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CountMeIn/Lib",
+					"$(PROJECT_DIR)/CountMeIn/Lib/Alamofire",
+					"$(PROJECT_DIR)/CountMeIn/Lib/Kingfisher",
 				);
 				INFOPLIST_FILE = CountMeIn/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -688,6 +706,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CountMeIn/Lib",
+					"$(PROJECT_DIR)/CountMeIn/Lib/Alamofire",
+					"$(PROJECT_DIR)/CountMeIn/Lib/Kingfisher",
 				);
 				INFOPLIST_FILE = CountMeIn/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
