@@ -41,6 +41,9 @@
 		864197C21C9FD286006E0B37 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864197C01C9FD286006E0B37 /* Kingfisher.framework */; };
 		864197C31C9FD305006E0B37 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 864197BE1C9FD286006E0B37 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		864197C41C9FD305006E0B37 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 864197C01C9FD286006E0B37 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		864197C81C9FD432006E0B37 /* TableViewControllerFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864197C71C9FD432006E0B37 /* TableViewControllerFind.swift */; };
+		864197CA1C9FD443006E0B37 /* SBFind.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 864197C91C9FD443006E0B37 /* SBFind.storyboard */; };
+		864197CC1C9FD468006E0B37 /* NavigationControllerFind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864197CB1C9FD468006E0B37 /* NavigationControllerFind.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +121,9 @@
 		0687C7381C9F9069004A5785 /* CountMeIn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CountMeIn-Bridging-Header.h"; sourceTree = "<group>"; };
 		864197BE1C9FD286006E0B37 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		864197C01C9FD286006E0B37 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = "<group>"; };
+		864197C71C9FD432006E0B37 /* TableViewControllerFind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerFind.swift; sourceTree = "<group>"; };
+		864197C91C9FD443006E0B37 /* SBFind.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SBFind.storyboard; sourceTree = "<group>"; };
+		864197CB1C9FD468006E0B37 /* NavigationControllerFind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerFind.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,6 +326,9 @@
 		0687C7081C9A81F0004A5785 /* Find */ = {
 			isa = PBXGroup;
 			children = (
+				864197C91C9FD443006E0B37 /* SBFind.storyboard */,
+				864197C71C9FD432006E0B37 /* TableViewControllerFind.swift */,
+				864197CB1C9FD468006E0B37 /* NavigationControllerFind.swift */,
 			);
 			name = Find;
 			sourceTree = "<group>";
@@ -485,6 +494,7 @@
 			files = (
 				0613A3D71C9A5AE6008FD601 /* LaunchScreen.storyboard in Resources */,
 				0613A3D41C9A5AE6008FD601 /* Assets.xcassets in Resources */,
+				864197CA1C9FD443006E0B37 /* SBFind.storyboard in Resources */,
 				0613A3D21C9A5AE6008FD601 /* Main.storyboard in Resources */,
 				0687C7271C9BF607004A5785 /* SBLogin.storyboard in Resources */,
 				0687C7281C9BF607004A5785 /* SBRegisterMobile.storyboard in Resources */,
@@ -523,7 +533,9 @@
 				0687C7151C9A8C0E004A5785 /* TableViewControllerActivity.swift in Sources */,
 				0613A4121C9A78F8008FD601 /* CALayer+Addition.swift in Sources */,
 				0687C7181C9A8CB0004A5785 /* TabbarControllerMain.swift in Sources */,
+				864197CC1C9FD468006E0B37 /* NavigationControllerFind.swift in Sources */,
 				0613A4141C9A78F8008FD601 /* GhostButton.swift in Sources */,
+				864197C81C9FD432006E0B37 /* TableViewControllerFind.swift in Sources */,
 				0613A4131C9A78F8008FD601 /* CFButton.swift in Sources */,
 				0613A4181C9A78F8008FD601 /* UITableView+NodataView.swift in Sources */,
 				0687C7261C9BF607004A5785 /* ViewControllerRegisterMobile.swift in Sources */,
