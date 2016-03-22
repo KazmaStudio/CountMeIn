@@ -9,13 +9,15 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        WXApi.registerApp(weChatAppid)
+
         return true
     }
 
@@ -41,6 +43,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
+        return WXApi.handleOpenURL(url, delegate: self)
+    }
+    
+    func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
+        return WXApi.handleOpenURL(url, delegate: self)
+    }
+    
+    func onResp(resp: BaseResp!) {
+        
+        
+        /*
+        
+        ErrCode  ERR_OK = 0(用户同意)
+        ERR_AUTH_DENIED = -4（用户拒绝授权）
+        ERR_USER_CANCEL = -2（用户取消）
+        code 用户换取access_token的code，仅在ErrCode为0时有效
+        state    第三方程序发送时用来标识其请求的唯一性的标志，由第三方程序调用sendReq时传入，由微信终端回传，state字符串长度不能超过1K
+        lang 微信客户端当前语言
+        country  微信用户当前国家信息
+        */
+        // var aresp resp :SendAuthResp!
+        let aresp = resp as! SendAuthResp
+        //  var aresp1 = resp as? SendAuthResp
+        
+        if (aresp.errCode == 0)
+        {
+            
+            let dic:Dictionary<String,String>=["code":aresp.code];
+            
+            NSNotificationCenter.defaultCenter().postNotificationName("WX_CODE", object: nil, userInfo: dic)
+            
+        }
+    }
 
 }
 
